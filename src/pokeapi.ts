@@ -17,6 +17,7 @@ export class PokeAPI {
 
     const cached = this.cache.get<ShallowLocations>(url);
     if (cached) {
+      console.log("FROM CACHE!!!");
       return cached;
     }
 
@@ -40,6 +41,7 @@ export class PokeAPI {
 
     const cached = this.cache.get<Location>(url);
     if (cached) {
+      console.log("FROM CACHE!!!!");
       return cached;
     }
 
